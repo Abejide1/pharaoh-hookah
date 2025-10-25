@@ -15,8 +15,8 @@
   ],
   "routes": [
     {
-      "src": "/api/(?<pathname>.+)",
-      "dest": "/api/$pathname"
+      "src": "/api/(.*)",
+      "dest": "/app/api/$1"
     },
     {
       "src": "/(.*)",
@@ -25,5 +25,10 @@
   ],
   "env": {
     "NODE_VERSION": "18.x"
+  },
+  "build": {
+    "env": {
+      "NEXT_TELEMETRY_DISABLED": "1"
+    }
   }
 }

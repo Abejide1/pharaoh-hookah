@@ -1,12 +1,36 @@
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Initialize Resend with environment variable
+const resendApiKey = process.env.RESEND_API_KEY;
 const fromEmail = process.env.EMAIL_FROM || 'reservations@pharaohhookah.com';
 const toEmail = process.env.EMAIL_TO || 'your-email@example.com';
 
+// Throw error early if API key is missing
+if (!resendApiKey) {
+  console.error('ERROR: RESEND_API_KEY is not set in environment variables');
+}
+
+const resend = new Resend(resendApiKey);
+
 export async function POST(request) {
   try {
+    if (!resendApiKey) {
+      console.error('RESEND_API_KEY is not set');
+      return new Response(
+        JSON.stringify({ error: 'Server configuration error' }), 
+        { status: 500, headers: { 'Content-Type': 'application/json' } }
+      );
+    }
+
     const { name, phone, date, time, party, email } = await request.json();
+    
+    // Validate required fields
+    if (!name || !phone || !date || !time || !party || !email) {
+      return new Response(
+        JSON.stringify({ error: 'Missing required fields' }), 
+        { status: 400, headers: { 'Content-Type': 'application/json' } }
+      );
+    }
     
     // Send email to business
     await resend.emails.send({
