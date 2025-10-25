@@ -542,7 +542,9 @@
                       day: 'numeric'
                     });
                     
-                    const response = await fetch('/api/reservation/route', {
+                    // Use environment variable for API base URL or default to current origin
+                    const apiBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL || '';
+                    const response = await fetch(`${apiBaseUrl}/api/reservation/route`, {
                       method: 'POST',
                       headers: {
                         'Content-Type': 'application/json',
