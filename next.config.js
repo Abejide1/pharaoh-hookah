@@ -12,13 +12,16 @@ const nextConfig = {
     unoptimized: true,
   },
   
-  // Ensure static export works
-  exportPathMap: async function() {
-    return {
-      '/': { page: '/' },
-      // Add other pages here if needed
-    };
+  // Enable App Router
+  experimental: {
+    // appDir is now stable in Next.js 14
   },
+  
+  // Skip API routes in static export
+  skipTrailingSlashRedirect: true,
+  
+  // For static export
+  generateBuildId: async () => 'static-build',
 };
 
 export default nextConfig;
