@@ -7,34 +7,16 @@
       "config": {
         "distDir": "out"
       }
-    },
-    {
-      "src": "app/api/**/*.js",
-      "use": "@vercel/node"
     }
   ],
   "routes": [
     {
-      "src": "/api/(.*)",
+      "src": "^/api/(.*)",
       "dest": "/api/$1"
     },
     {
-      "src": "^/$",
-      "dest": "/index.html"
-    },
-    {
-      "src": "/(.*)",
+      "src": "^/(.*)$",
       "dest": "/$1"
     }
-  ],
-  "env": {
-    "NODE_VERSION": "18.x"
-  },
-  "build": {
-    "env": {
-      "NEXT_TELEMETRY_DISABLED": "1"
-    }
-  },
-  "cleanUrls": true,
-  "trailingSlash": true
+  ]
 }
