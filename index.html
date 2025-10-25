@@ -542,9 +542,17 @@
                       day: 'numeric'
                     });
                     
+                    // Debug: Log environment and request details
+                    console.log('Environment:', process.env.NODE_ENV);
+                    console.log('Window location:', window.location.origin);
+                    
                     // Use environment variable for API base URL or default to current origin
-                    const apiBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL || '';
-                    const response = await fetch(`${apiBaseUrl}/api/reservation/route`, {
+                    const apiBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL || window.location.origin;
+                    const apiUrl = `${apiBaseUrl}/api/reservation/route`;
+                    console.log('API URL:', apiUrl);
+                    
+                    try {
+                        const response = await fetch(apiUrl, {
                       method: 'POST',
                       headers: {
                         'Content-Type': 'application/json',
@@ -556,7 +564,21 @@
                       }),
                     });
                     
-                    const result = await response.json();
+                        if (!response.ok) {
+                            throw new Error(`HTTP error! status: ${response.status}`);
+                        }
+                        const result = await response.json();
+                        console.log('API Response:', result);
+                    } catch (error) {
+                        console.error('API Error:', {
+                            message: error.message,
+                            name: error.name,
+                            stack: error.stack,
+                            apiUrl: apiUrl,
+                            timestamp: new Date().toISOString()
+                        });
+                        throw error; // Re-throw to be caught by the outer catch
+                    }
                     
                     if (!response.ok) {
                       throw new Error(result.error || 'Failed to submit reservation');
