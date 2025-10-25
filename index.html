@@ -542,14 +542,8 @@
                       day: 'numeric'
                     });
                     
-                    // Debug: Log environment and request details
-                    console.log('Environment:', process.env.NODE_ENV);
-                    console.log('Window location:', window.location.origin);
-                    
-                    // Use environment variable for API base URL or default to current origin
-                    const apiBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL || window.location.origin;
-                    const apiUrl = `${apiBaseUrl}/api/reservation/route`;
-                    console.log('API URL:', apiUrl);
+                    // Use a serverless function for form submission
+                    const apiUrl = 'https://pharaoh-hookah.vercel.app/api/reservation';
                     
                     try {
                         const response = await fetch(apiUrl, {
