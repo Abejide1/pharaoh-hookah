@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pharaoh Hookah | Hookah & Cigar Lounge</title>
+    <meta name="description" content="Pharaoh Hookah is a premium hookah and cigar lounge offering curated shisha flavors, fine cigars, cocktails, and luxurious vibes." />
+    <meta name="theme-color" content="#111111" />
+    <meta property="og:title" content="Pharaoh Hookah" />
+    <meta property="og:description" content="Premium hookah and cigar lounge. Reserve your table tonight." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/img/social-card.png" />
+    <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&family=Cinzel:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Pharaoh Hookah Home">
+          <img src="/assets/img/Pharaoh hookah1.jpeg" alt="Pharaoh Hookah logo" class="logo" />
+          <span>Pharaoh Hookah</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul id="primary-menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#hours">Hours & Location</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a class="btn btn-gold" href="#reservations">Reserve</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="Hero">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="container hero-content">
+          <h1 class="headline">Experience Ancient Luxury</h1>
+          <p class="subhead">Authentic Egyptian hospitality meets modern Miami nightlife. Premium shisha, fine cigars, and royal ambiance.</p>
+          <div class="hero-cta">
+            <a href="#reservations" class="btn btn-gold">Reserve a Table</a>
+            <a href="#menu" class="btn btn-ghost">Explore Menu</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section section-about">
+        <div class="container grid-2">
+          <div>
+            <h2 class="section-title">About Pharaoh Hookah</h2>
+            <div class="god-section">
+              <h3 style="color: var(--gold); font-family: 'Cinzel', serif; margin: 0 0 12px;">Under the Protection of Ra</h3>
+              <p>
+                Owned and operated by Egyptian hospitality experts, Pharaoh Hookah brings authentic Middle Eastern culture to Miami. Experience traditional Egyptian warmth, premium shisha blends, and the legendary hospitality that Egypt is known for—all within a luxurious, modern setting.
+              </p>
+            </div>
+            <ul class="checks">
+              <li>Premium shisha blends and custom mixes</li>
+              <li>Humidor with hand-selected cigars</li>
+              <li>Refreshing mocktails and traditional tea service</li>
+              <li>Live DJ sets, private events, and VIP packages</li>
+            </ul>
+          </div>
+          <div class="about-card egyptian-border">
+            <div class="god-section">
+              <h3 style="color: var(--gold); font-family: 'Cinzel', serif; margin: 0 0 12px;">Blessed by Anubis</h3>
+              <div class="about-stats">
+                <div>
+                  <span class="stat">20+</span>
+                  <span class="label">Sacred Hookah Flavors</span>
+                </div>
+                <div>
+                  <span class="stat">40+</span>
+                  <span class="label">Royal Cigars</span>
+                </div>
+                <div>
+                  <span class="stat">7</span>
+                  <span class="label">Days of Service</span>
+                </div>
+              </div>
+            </div>
+            <a href="#reservations" class="btn btn-gold btn-block">Book Your Royal Experience</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="menu" class="section section-menu">
+        <div class="container">
+          <h2 class="section-title center">Sacred Menu</h2>
+          <div class="god-section">
+            <h3 style="color: var(--gold); font-family: 'Cinzel', serif; margin: 0 0 16px; text-align: center;">Blessed by Thoth, God of Wisdom</h3>
+            <div class="tabs" role="tablist" aria-label="Menu Tabs">
+              <button role="tab" aria-selected="true" aria-controls="panel-hookah" id="tab-hookah" class="tab">Hookah</button>
+              <button role="tab" aria-selected="false" aria-controls="panel-cigar" id="tab-cigar" class="tab">Cigars</button>
+              <button role="tab" aria-selected="false" aria-controls="panel-drinks" id="tab-drinks" class="tab">Drinks</button>
+            </div>
+          </div>
+          <div class="tab-panels">
+            <div id="panel-hookah" role="tabpanel" aria-labelledby="tab-hookah" class="panel is-active">
+              <ul class="menu-list">
+                <li><span>Pharaoh's Signature Mix</span><span class="dots"></span><span class="price">$40</span></li>
+                <li><span>Double Apple</span><span class="dots"></span><span class="price">$40</span></li>
+                <li><span>Mint Bliss</span><span class="dots"></span><span class="price">$40</span></li>
+                <li><span>Blue Mist</span><span class="dots"></span><span class="price">$40</span></li>
+                <li><span>Exotic Fruit Medley</span><span class="dots"></span><span class="price">$40</span></li>
+              </ul>
+              <p class="fine-print">All hookahs $40 each, plus service and tax. Extra coals complimentary.</p>
+            </div>
+            <div id="panel-cigar" role="tabpanel" aria-labelledby="tab-cigar" class="panel">
+              <ul class="menu-list">
+                <li><span>Arturo Fuente Hemingway</span><span class="dots"></span><span class="price">$15</span></li>
+                <li><span>Padron 1964 Anniversary</span><span class="dots"></span><span class="price">$24</span></li>
+                <li><span>Oliva Series V</span><span class="dots"></span><span class="price">$13</span></li>
+                <li><span>Romeo y Julieta Reserva</span><span class="dots"></span><span class="price">$12</span></li>
+                <li><span>Cohiba Blue</span><span class="dots"></span><span class="price">$18</span></li>
+              </ul>
+              <p class="fine-print">Humidor selection rotates weekly. Ask for recommendations.</p>
+            </div>
+            <div id="panel-drinks" role="tabpanel" aria-labelledby="tab-drinks" class="panel">
+              <ul class="menu-list">
+                <li><span>Fresh Mint Lemonade</span><span class="dots"></span><span class="price">$6</span></li>
+                <li><span>Moroccan Mint Tea</span><span class="dots"></span><span class="price">$5</span></li>
+                <li><span>Iced Mocha</span><span class="dots"></span><span class="price">$5</span></li>
+                <li><span>Fruit Smoothie</span><span class="dots"></span><span class="price">$7</span></li>
+                <li><span>Sparkling Water</span><span class="dots"></span><span class="price">$3</span></li>
+              </ul>
+              <p class="fine-print">Ask about our selection of premium non-alcoholic beverages.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="section section-gallery">
+        <div class="container">
+          <h2 class="section-title center">Royal Gallery</h2>
+          <div class="god-section">
+            <h3 style="color: var(--gold); font-family: 'Cinzel', serif; margin: 0 0 16px; text-align: center;">Guided by Isis, Goddess of Magic</h3>
+          </div>
+          <div class="carousel-container">
+            <div class="carousel-slide">
+              <!-- Images will be dynamically inserted here by JavaScript -->
+            </div>
+            <button class="carousel-control prev" aria-label="Previous image">
+              <span class="carousel-arrow">&#10094;</span>
+            </button>
+            <button class="carousel-control next" aria-label="Next image">
+              <span class="carousel-arrow">&#10095;</span>
+            </button>
+            <div class="carousel-dots">
+              <!-- Dots will be added by JavaScript -->
+            </div>
+          </div>
+        </div>
+        <style>
+          .carousel-container {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+          }
+          
+          .carousel-slide {
+            display: flex;
+            width: 100%;
+            height: 600px; /* Increased height for better display */
+            transition: transform 0.5s ease-in-out;
+            background: #000; /* Black background for any potential gaps */
+          }
+          
+          .carousel-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Changed from 'cover' to 'contain' to show full images */
+            object-position: center center;
+            flex-shrink: 0;
+            background: #000; /* Black background for any transparent areas */
+          }
+          
+          /* Ensure images maintain aspect ratio and don't stretch */
+          @supports (aspect-ratio: 16/9) {
+            .carousel-slide img {
+              aspect-ratio: 16/9;
+              width: 100%;
+              height: auto;
+              max-height: 100%;
+              margin: 0 auto;
+            }
+          }
+          
+          .carousel-control {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: var(--gold);
+            border: none;
+            padding: 15px;
+            cursor: pointer;
+            font-size: 24px;
+            z-index: 10;
+            transition: all 0.3s ease;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          
+          .carousel-control:hover {
+            background: var(--gold);
+            color: #000;
+          }
+          
+          .carousel-control.prev {
+            left: 20px;
+          }
+          
+          .carousel-control.next {
+            right: 20px;
+          }
+          
+          .carousel-dots {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+          }
+          
+          .carousel-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+          }
+          
+          .carousel-dot.active {
+            background: var(--gold);
+            transform: scale(1.2);
+          }
+          
+          @media (max-width: 768px) {
+            .carousel-slide {
+              height: 400px; /* Increased height for mobile */
+            }
+            
+            .carousel-control {
+              width: 40px;
+              height: 40px;
+              font-size: 20px;
+            }
+          }
+        </style>
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            // List of all gallery images
+            const images = [
+              '/assets/PicsGallery/1.jpg',
+              '/assets/PicsGallery/2.jpg',
+              '/assets/PicsGallery/3.jpg',
+              '/assets/PicsGallery/348s (2).jpg',
+              '/assets/PicsGallery/348s (3).jpg',
+              '/assets/PicsGallery/348s (4).jpg',
+              '/assets/PicsGallery/348s (5).jpg',
+              '/assets/PicsGallery/348s (6).jpg',
+              '/assets/PicsGallery/348s (7).jpg',
+              '/assets/PicsGallery/348s (8).jpg',
+              '/assets/PicsGallery/348s (9).jpg',
+              '/assets/PicsGallery/348s (10).jpg',
+              '/assets/PicsGallery/348s (11).jpg',
+              '/assets/PicsGallery/348s (12).jpg',
+              '/assets/PicsGallery/348s (13).jpg',
+              '/assets/PicsGallery/348s (14).jpg',
+              '/assets/PicsGallery/348s.jpg',
+              '/assets/PicsGallery/thumbnail.jpg'
+            ];
+            
+            const slide = document.querySelector('.carousel-slide');
+            const dotsContainer = document.querySelector('.carousel-dots');
+            let currentIndex = 0;
+            let slideInterval;
+            
+            // Create slides and dots
+            images.forEach((img, index) => {
+              // Create slide with optimized image loading
+              const imgElement = document.createElement('img');
+              // Use higher quality images if available
+              const imgSrc = img.includes('?') ? 
+                `${img}&width=1200&quality=85` : 
+                `${img}?width=1200&quality=85`;
+              imgElement.src = imgSrc;
+              imgElement.alt = `Gallery image ${index + 1}`;
+              imgElement.loading = 'eager'; // Load immediately since they're above the fold
+              imgElement.decoding = 'async';
+              imgElement.fetchPriority = 'high';
+              slide.appendChild(imgElement);
+              
+              // Create dot
+              const dot = document.createElement('button');
+              dot.classList.add('carousel-dot');
+              if (index === 0) dot.classList.add('active');
+              dot.addEventListener('click', () => goToSlide(index));
+              dotsContainer.appendChild(dot);
+            });
+            
+            // Set initial position
+            updateSlidePosition();
+            
+            // Auto-advance slides
+            function startSlideShow() {
+              slideInterval = setInterval(nextSlide, 5000);
+            }
+            
+            function nextSlide() {
+              currentIndex = (currentIndex + 1) % images.length;
+              updateSlidePosition();
+            }
+            
+            function prevSlide() {
+              currentIndex = (currentIndex - 1 + images.length) % images.length;
+              updateSlidePosition();
+            }
+            
+            function goToSlide(index) {
+              currentIndex = index;
+              updateSlidePosition();
+            }
+            
+            function updateSlidePosition() {
+              slide.style.transform = `translateX(-${currentIndex * 100}%)`;
+              
+              // Update active dot
+              document.querySelectorAll('.carousel-dot').forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentIndex);
+              });
+              
+              // Reset the auto-advance timer
+              resetSlideTimer();
+            }
+            
+            function resetSlideTimer() {
+              clearInterval(slideInterval);
+              startSlideShow();
+            }
+            
+            // Event listeners
+            document.querySelector('.carousel-control.next').addEventListener('click', nextSlide);
+            document.querySelector('.carousel-control.prev').addEventListener('click', prevSlide);
+            
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+              if (e.key === 'ArrowRight') nextSlide();
+              if (e.key === 'ArrowLeft') prevSlide();
+            });
+            
+            // Touch support
+            let touchStartX = 0;
+            let touchEndX = 0;
+            
+            slide.addEventListener('touchstart', (e) => {
+              touchStartX = e.changedTouches[0].screenX;
+            }, { passive: true });
+            
+            slide.addEventListener('touchend', (e) => {
+              touchEndX = e.changedTouches[0].screenX;
+              handleSwipe();
+            }, { passive: true });
+            
+            function handleSwipe() {
+              const swipeThreshold = 50; // Minimum distance to trigger slide change
+              const difference = touchStartX - touchEndX;
+              
+              if (Math.abs(difference) > swipeThreshold) {
+                if (difference > 0) {
+                  nextSlide();
+                } else {
+                  prevSlide();
+                }
+              }
+            }
+            
+            // Pause autoplay when hovering over the carousel
+            const carousel = document.querySelector('.carousel-container');
+            carousel.addEventListener('mouseenter', () => clearInterval(slideInterval));
+            carousel.addEventListener('mouseleave', startSlideShow);
+            
+            // Start the slideshow
+            startSlideShow();
+          });
+        </script>
+      </section>
+
+      <section id="reservations" class="section section-reserve">
+        <div class="container reserve-inner">
+          <div>
+            <h2 class="section-title">Royal Reservations</h2>
+            <div class="god-section">
+              <h3 style="color: var(--gold); font-family: 'Cinzel', serif; margin: 0 0 12px;">Honored by Horus, God of Kings</h3>
+              <p>Secure your royal lounge experience. Walk-ins are welcome, but reservations are recommended on weekends.</p>
+            </div>
+            <ul class="checks">
+              <li>Tables for 2–8 royal guests</li>
+              <li>Private pharaoh party packages</li>
+              <li>Premium hookah service for all occasions</li>
+            </ul>
+          </div>
+          <div class="reserve-card">
+            <form class="reserve-form" id="reservation-form" method="POST" novalidate>
+              <div id="form-success" class="form-success" style="display: none; background: #1a1a1a; color: var(--gold); padding: 15px; border-radius: 8px; margin-bottom: 20px; text-align: center; border: 1px solid var(--gold);">
+                Thank you for your reservation! We'll confirm it shortly via email.
+              </div>
+              <div id="form-error" style="display: none; background: #2a0a0a; color: #ff6b6b; padding: 15px; border-radius: 8px; margin-bottom: 20px; text-align: center; border: 1px solid #ff6b6b;">
+                Error submitting reservation. Please try again or call us at (your-phone-number).
+              </div>
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required />
+              </div>
+              <div class="field">
+                <label for="email">Email (for confirmation)</label>
+                <input id="email" name="email" type="email" placeholder="your@email.com" required />
+              </div>
+              <div class="field">
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" placeholder="+1 (123) 456-7890" pattern="^\+?[0-9\s-()]{10,}$" required />
+              </div>
+              <div class="field">
+                <label for="date">Date</label>
+                <input type="text" id="date" name="date" required readonly style="cursor: pointer;" />
+                <script>
+                  // Initialize Pikaday
+                  document.addEventListener('DOMContentLoaded', function() {
+                    const picker = new Pikaday({
+                      field: document.getElementById('date'),
+                      minDate: new Date(),
+                      format: 'MM/DD/YYYY',
+                      yearRange: [new Date().getFullYear(), new Date().getFullYear() + 1],
+                      showDaysInNextAndPreviousMonths: true,
+                      enableSelectionDaysInNextAndCurrentMonth: true,
+                      onOpen: function() {
+                        this.el.style.borderColor = 'var(--gold)';
+                      },
+                      onClose: function() {
+                        this.el.style.borderColor = 'var(--border)';
+                      }
+                    });
+                    
+                    // Style the date input
+                    const dateInput = document.getElementById('date');
+                    dateInput.style.width = '100%';
+                    dateInput.style.padding = '12px 14px';
+                    dateInput.style.borderRadius = '10px';
+                    dateInput.style.border = '1px solid var(--border)';
+                    dateInput.style.background = '#0f0f0f';
+                    dateInput.style.color = 'var(--text)';
+                    dateInput.style.fontFamily = 'Inter, sans-serif';
+                    dateInput.style.boxSizing = 'border-box';
+                  });
+                </script>
+              </div>
+              <div class="field">
+                <label for="time">Time</label>
+                <input id="time" name="time" type="time" required />
+              </div>
+              <div class="field">
+                <label for="party">Party Size</label>
+                <select id="party" name="party" required>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                </select>
+              </div>
+              <button class="btn btn-gold btn-block" type="submit" id="submit-btn">
+                <span class="btn-text">Request Royal Reservation</span>
+                <span class="btn-spinner" style="display: none;">Sending...</span>
+              </button>
+              <p class="fine-print">A confirmation will be sent to your email shortly.</p>
+            </form>
+            <script>
+              document.addEventListener('DOMContentLoaded', function() {
+                const form = document.getElementById('reservation-form');
+                const submitBtn = document.getElementById('submit-btn');
+                const btnText = submitBtn.querySelector('.btn-text');
+                const btnSpinner = submitBtn.querySelector('.btn-spinner');
+                const formSuccess = document.getElementById('form-success');
+                const formError = document.getElementById('form-error');
+                
+                // Hide error message initially
+                formError.style.display = 'none';
+                
+                form.addEventListener('submit', async function(e) {
+                  e.preventDefault();
+                  
+                  // Hide any previous messages
+                  formSuccess.style.display = 'none';
+                  formError.style.display = 'none';
+                  
+                  // Show loading state
+                  btnText.style.display = 'none';
+                  btnSpinner.style.display = 'inline';
+                  submitBtn.disabled = true;
+                  
+                  try {
+                    const formData = new FormData(form);
+                    const formValues = Object.fromEntries(formData.entries());
+                    
+                    // Basic validation
+                    if (!formValues.name || !formValues.email || !formValues.phone || !formValues.date || !formValues.time || !formValues.party) {
+                      throw new Error('Please fill in all required fields');
+                    }
+                    
+                    // Format the date for better display
+                    const dateObj = new Date(formValues.date);
+                    const formattedDate = dateObj.toLocaleDateString('en-US', {
+                      weekday: 'long',
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric'
+                    });
+                    
+                    const response = await fetch('/api/reservation', {
+                      method: 'POST',
+                      headers: {
+                        'Content-Type': 'application/json',
+                      },
+                      body: JSON.stringify({
+                        ...formValues,
+                        date: formattedDate,
+                        time: formValues.time + ' ' + (parseInt(formValues.time.split(':')[0]) >= 12 ? 'PM' : 'AM')
+                      }),
+                    });
+                    
+                    const result = await response.json();
+                    
+                    if (!response.ok) {
+                      throw new Error(result.error || 'Failed to submit reservation');
+                    }
+                    
+                    // Show success message
+                    formSuccess.style.display = 'block';
+                    form.reset();
+                    
+                    // Scroll to show success message
+                    formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    
+                    // Hide success message after 8 seconds
+                    setTimeout(() => {
+                      formSuccess.style.display = 'none';
+                    }, 8000);
+                    
+                  } catch (error) {
+                    console.error('Reservation error:', error);
+                    formError.textContent = `Error: ${error.message}. Please try again or call us.`;
+                    formError.style.display = 'block';
+                    formError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                  } finally {
+                    // Reset button state
+                    btnText.style.display = 'inline';
+                    btnSpinner.style.display = 'none';
+                    submitBtn.disabled = false;
+                  }
+                });
+              });
+            </script>
+          </div>
+        </div>
+      </section>
+
+      <section id="hours" class="section section-hours">
+        <div class="container grid-2">
+          <div>
+            <h2 class="section-title">Royal Hours & Location</h2>
+            <div class="god-section">
+              <h3 style="color: var(--gold); font-family: 'Cinzel', serif; margin: 0 0 12px;">Watched by Osiris, God of the Afterlife</h3>
+            </div>
+            <ul class="hours">
+              <li><span>Monday – Sunday</span><span>2:00 PM – 2:00 AM</span></li>
+            </ul>
+            <address class="address">
+              2955 SW 8th St Suite 202<br />
+              Miami, FL 33135
+            </address>
+            <p><a class="link" href="https://maps.google.com/maps?q=2955+SW+8th+St+Suite+202+Miami+FL+33135" target="_blank" rel="noopener">Open in Maps</a></p>
+          </div>
+          <div class="map-card">
+            <iframe title="Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.openstreetmap.org/export/embed.html?bbox=-80.245%2C25.765%2C-80.235%2C25.775&amp;layer=mapnik&amp;marker=25.77,-80.24&amp;zoom=16" style="border: 1px solid #333; border-radius: 12px; filter: grayscale(20%) contrast(1.1);"></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-contact">
+        <div class="container grid-2">
+          <div>
+            <h2 class="section-title">Royal Contact</h2>
+            <div class="god-section">
+              <h3 style="color: var(--gold); font-family: 'Cinzel', serif; margin: 0 0 12px;">Protected by Bastet, Goddess of Protection</h3>
+              <p>Questions, events, partnerships—let's connect with royal hospitality.</p>
+            </div>
+            <ul class="contact-list">
+              <li><a class="link" href="tel:+13055551234">(305) 555-1234</a></li>
+              <li><a class="link" href="mailto:info@pharaohhookahmiami.com">info@pharaohhookahmiami.com</a></li>
+              <li><a class="link" href="https://www.yelp.com/biz/pharaoh-hookah-and-cigar-lounge-miami" target="_blank" rel="noopener">@pharaohhookah</a></li>
+              <li><a class="link" href="https://www.yelp.com/biz/pharaoh-hookah-and-cigar-lounge-miami" target="_blank" rel="noopener">Read Reviews on Yelp</a></li>
+            </ul>
+          </div>
+          <div class="contact-card">
+            <form class="contact-form" name="contact" method="POST" data-netlify="true">
+              <input type="hidden" name="form-name" value="contact" />
+              <div class="field">
+                <label for="cname">Name</label>
+                <input id="cname" name="name" type="text" required />
+              </div>
+              <div class="field">
+                <label for="cemail">Email</label>
+                <input id="cemail" name="email" type="email" required />
+              </div>
+              <div class="field">
+                <label for="cmsg">Message</label>
+                <textarea id="cmsg" name="message" rows="4" required></textarea>
+              </div>
+              <button class="btn btn-ghost btn-block" type="submit">Send Royal Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="brand small" href="#top">
+          <img src="/assets/img/Pharaoh hookah1.jpeg" alt="Pharaoh Hookah logo" class="logo" />
+          <span>Pharaoh Hookah</span>
+        </a>
+        <p class="copyright">© <span id="year"></span> Pharaoh Hookah. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="/assets/js/main.js" defer></script>
+  </body>
+  </html>
+
+

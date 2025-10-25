@@ -1,0 +1,21 @@
+{
+  "name": "pharaoh-hookah",
+  "version": "1.0.0",
+  "description": "Pharaoh Hookah & Cigar Lounge - Premium Hookah Experience",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^16.0.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "resend": "^2.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "type": "module"
+}
