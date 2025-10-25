@@ -16,7 +16,11 @@
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "/app/api/$1"
+      "dest": "/api/$1"
+    },
+    {
+      "src": "^/$",
+      "dest": "/index.html"
     },
     {
       "src": "/(.*)",
@@ -30,5 +34,7 @@
     "env": {
       "NEXT_TELEMETRY_DISABLED": "1"
     }
-  }
+  },
+  "cleanUrls": true,
+  "trailingSlash": true
 }
