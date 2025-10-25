@@ -83,38 +83,35 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-For any questions or support, please contact us at [your-email@example.com](mailto:your-email@example.com) — Static Website
+For any questions or support, please contact JIDE LLC.
 
-A premium, responsive static website for the Pharaoh Hookah & Cigar Lounge.
+# Pharaoh Hookah
 
-## Getting Started
+A modern, responsive website for Pharaoh Hookah & Cigar Lounge. Built and maintained by JIDE LLC.
 
-Open `index.html` directly in a browser, or serve the folder with any static server.
+## Features
 
-```bash
-# macOS simple server options
-python3 -m http.server 5173
-# or
-npx serve -l 5173
-```
+- Mobile-responsive design
+- Image gallery with lightbox
+- Interactive reservation form
+- Hours and location section
+- Menu display
 
-Then visit `http://localhost:5173`.
+## Development
 
-## Customize
+### Local Development
 
-- Update copy in `index.html` (address, hours, menu items, prices).
-- Replace images in `index.html` gallery with your own assets.
-- Swap `assets/img/logo.svg` and add `assets/img/social-card.png` for link previews.
-- Colors and theme live in `assets/css/styles.css` under `:root` variables.
+1. Clone the repository
+2. Start the development server:
+   ```bash
+   npx serve -l 5173
+   ```
+   Then visit `http://localhost:5173`.
 
-## Hosting
+## About
 
-This site is static—host on any provider: GitHub Pages, Netlify, Vercel, S3, etc.
-
-Forms are preconfigured for Netlify (`data-netlify="true"`). If not using Netlify, wire the forms to your backend or a form service.
+This website was built and is maintained by JIDE LLC. For any technical inquiries or support, please contact JIDE LLC.
 
 ## License
 
-All rights reserved © Pharaoh Hookah. Replace Unsplash demo images for production use.
-
-
+All rights reserved  Pharaoh Hookah. Website built and maintained by JIDE LLC.
