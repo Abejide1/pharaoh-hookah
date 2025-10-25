@@ -1,6 +1,6 @@
 # Pharaoh Hookah & Cigar Lounge
 
-A premium, responsive website for Pharaoh Hookah & Cigar Lounge featuring online reservations, menu, and gallery.
+A premium, responsive website for Pharaoh Hookah & Cigar Lounge featuring online reservations, menu, and gallery. Enjoy our welcoming atmosphere with free WiFi, making it a perfect spot to study after class. Catch all the live sports action on our big screens while you relax with our premium hookah selection.
 
 ## Features
 
@@ -9,6 +9,9 @@ A premium, responsive website for Pharaoh Hookah & Cigar Lounge featuring online
 - Online reservation system with email confirmations
 - Menu display with tabbed interface
 - Contact information and business hours
+- Free high-speed WiFi
+- Great study environment
+- Live sports on big screens
 
 ## Getting Started
 
@@ -36,7 +39,7 @@ A premium, responsive website for Pharaoh Hookah & Cigar Lounge featuring online
    ```env
    RESEND_API_KEY=your_resend_api_key
    EMAIL_FROM=reservations@yourdomain.com
-   EMAIL_TO=your-email@example.com
+   EMAIL_TO=pharaoh.hookah.cigar@gmail.com
    ```
 
 ### Development

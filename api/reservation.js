@@ -3,7 +3,7 @@ const { Resend } = require('resend');
 // Initialize email service
 const resend = new Resend(process.env.RESEND_API_KEY);
 const fromEmail = process.env.EMAIL_FROM || 'reservations@pharaohhookah.com';
-const toEmail = process.env.EMAIL_TO || 'your-email@example.com';
+const toEmail = process.env.EMAIL_TO || 'pharaoh.hookah.cigar@gmail.com';
 
 module.exports = async (req, res) => {
   if (req.method !== 'POST') {
